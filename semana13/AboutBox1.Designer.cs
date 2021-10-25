@@ -74,7 +74,7 @@ namespace semana13
             this.logoPictureBox.Name = "logoPictureBox";
             this.tableLayoutPanel.SetRowSpan(this.logoPictureBox, 6);
             this.logoPictureBox.Size = new System.Drawing.Size(131, 259);
-            this.logoPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.logoPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.logoPictureBox.TabIndex = 12;
             this.logoPictureBox.TabStop = false;
             // 
@@ -143,12 +143,14 @@ namespace semana13
             // okButton
             // 
             this.okButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.okButton.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.okButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.okButton.Location = new System.Drawing.Point(339, 239);
             this.okButton.Name = "okButton";
             this.okButton.Size = new System.Drawing.Size(75, 23);
             this.okButton.TabIndex = 24;
             this.okButton.Text = "&Aceptar";
+            this.okButton.UseVisualStyleBackColor = false;
             this.okButton.Click += new System.EventHandler(this.okButton_Click);
             // 
             // AboutBox1
@@ -156,6 +158,7 @@ namespace semana13
             this.AcceptButton = this.okButton;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.LightCoral;
             this.ClientSize = new System.Drawing.Size(435, 283);
             this.Controls.Add(this.tableLayoutPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
@@ -166,7 +169,7 @@ namespace semana13
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "AboutBox1";
+            this.Text = "Acerca de";
             this.tableLayoutPanel.ResumeLayout(false);
             this.tableLayoutPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logoPictureBox)).EndInit();
