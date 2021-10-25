@@ -64,6 +64,7 @@ namespace semana13
             this.combosToolStripMenuItem.Name = "combosToolStripMenuItem";
             this.combosToolStripMenuItem.Size = new System.Drawing.Size(64, 20);
             this.combosToolStripMenuItem.Text = "Combos";
+            this.combosToolStripMenuItem.Click += new System.EventHandler(this.combosToolStripMenuItem_Click);
             // 
             // ensaladasToolStripMenuItem
             // 
@@ -95,6 +96,7 @@ namespace semana13
             this.ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
             this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
             this.ayudaToolStripMenuItem.Text = "Ayuda";
+            this.ayudaToolStripMenuItem.Click += new System.EventHandler(this.ayudaToolStripMenuItem_Click);
             // 
             // inventarioToolStripMenuItem
             // 
